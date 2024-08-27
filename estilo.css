@@ -1,0 +1,27 @@
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    padding: 1rem;
+}
+
+body {
+    background-color: #FDFCDC;
+    font-family: 'Lucida Console', Monospace;
+    text-align: center;
+}
+
+a {
+    color: #0081A7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F07167;
+}
+
+h1 {
+    color: #061A40;
+}
