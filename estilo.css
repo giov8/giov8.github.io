@@ -8,13 +8,13 @@ li {
 }
 
 body {
-    background-color: #FDFCDC;
+    background-color: #8eade3;
     font-family: 'Lucida Console', Monospace;
     text-align: center;
 }
 
 a {
-    color: #0081A7;
+    color: #4e5a86;
     text-decoration: none;
 }
 
@@ -23,5 +23,9 @@ a:hover {
 }
 
 h1 {
-    color: #061A40;
+    color: #4d3d67;
+}
+
+img {
+    border-radius: 10%;
 }

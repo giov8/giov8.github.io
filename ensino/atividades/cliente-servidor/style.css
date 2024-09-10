@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+   
+   .container {
+    width: 500px;
+    margin: 100px;
+    text-align: center;
+   }
+
+   a {
+    text-decoration: none;
+   }
+   
+   .pretitle {
+    margin-top: 150px;
+    font-size: 30px;
+    color: #164a84;
+    text-shadow: 0px 0px 10px #ece8ef;
+   }
+
+   .title {
+    font-size: 60px;
+    color: #ece8ef;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 4px #164a84;
+    font-weight: 800;
+   }
+
+   .start .title{
+    margin-top: -50px;
+    color: #164a84;
+    text-shadow: none;
+   }
+
+   .start .pretitle {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #278bbb;
+    text-shadow: 0px 0px 10px #ece8ef;
+   }
+   
+   .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   
+   .start-button, .story-button {
+    background-color: #278bbb;
+    color: #ece8ef;
+    border: none;
+    font-size: 24px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+   }
+   
+   .start-button:hover, .story-button:hover {
+    background-color: #164a84;
+    color: #e86e0a;
+    font-weight: 600;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   
+body {
+    background-image: url('fundo.png'); /* replace with your image URL */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: auto;
+        background-position: top;
+    }
+}
+
+.box {
+    flex: auto;
+    width: 80%;
+    height: auto;
+    background-color: #ece8efe5;
+    border-radius: 20px;
+    margin: 10%;
+    margin-top: 5%;
+
+    position: absolute;
+    /* top: 50%;
+    left: 50%;*/
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+    z-index: -1;
+    margin-bottom: 10%;
+}
+
+body {
+    text-align: center;
+}
+
+.box p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+.destaque {
+    font-weight: 800;
+    color:  #e86e0a;
+}
+
+a.nav {
+    padding: 15px;
+    color:#ece8ef;
+    font-size: 1.5rem;
+    background-color: #278bbb;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #164a84;
+
+}
+
+ul {
+    text-align: left;
+}
+
+img {
+    max-width: 70%;
+    border-radius: 40px;
+}
+
+.outros {
+    display: flex;
+    justify-content: center;
+}
+
+.outros img {
+    width: 300px;
+}
