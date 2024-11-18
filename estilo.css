@@ -54,6 +54,28 @@ h1 {
     filter: drop-shadow(0 0 0.75rem rgb(232, 197, 241));
 }
 
+.pag-inicial p{
+    color: aliceblue;
+}
+
+.cristal-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio {
+    background-image: url(imagens/background3.webp);
+    color: aliceblue;
+}
+.bio h2{
+    color: aliceblue;
+}
+
+.bio img {
+    border-radius: 10px;
+}
+
 .galeria {
     display: flex;
     flex-wrap: wrap;
