@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte um PC!</title>
+    <link rel="shortcut icon" href="sol.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Roboto", serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .sidebar {
+            width: 20%;
+            background: linear-gradient(145deg, #1e293b, #111827);
+            padding: 10px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .sidebar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease, border 0.3s ease;
+        }
+
+        .sidebar img:hover {
+            transform: scale(1.1);
+            border-color: #38bdf8;
+        }
+
+        .details {
+            width: 80%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .details img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .details h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #38bdf8;
+            font-family: "Orbitron", sans-serif;
+        }
+
+        a h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #38bdf8;
+            font-family: "Orbitron", sans-serif;
+            text-decoration: none;
+        }
+
+
+        .details p {
+            margin: 5px 0;
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0284c7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Lado esquerdo: seleção de personagens -->
+        <div class="sidebar">
+            <a href="index.html"><h2>Instruções</h2></a>
+            <img src="anna.png" alt="Anna" onclick="showDetails('anna', 'Anna, Desenvolvedora de Software', 'Escrever e compilar código, testar e depurar softwares, trabalhar com bancos de dados, gerenciar projetos de software. Prioridades: Processador multi-core potente, grande quantidade de RAM, tela grande com alta resolução, teclado ergonômico, múltiplas portas USB para conectar periféricos.', 'R$ 4.500,00')">
+            <img src="ariel.png" alt="Ariel" onclick="showDetails('ariel', 'Ariel, Gamer', 'Jogar jogos online com gráficos altos e taxas de quadros altas, streaming de jogos ao vivo, comunicação com amigos durante as partidas. Prioridades: Processador e placa de vídeo de alto desempenho, monitor com alta taxa de atualização.', 'R$ 5.000,00')">
+            <img src="sol.png" alt="Sol" onclick="showDetails('sol', 'Sol, Estudante de Nutrição', 'Navegação na internet, uso de ferramentas online para pesquisa e estudo, edição de textos e apresentações, videoconferências. Prioridades: Computador leve e portátil, com bateria de boa duração, tela grande.', 'R$ 2.000,00')">
+            <img src="akira.png" alt="Akira" onclick="showDetails('akira', 'Akira, Designer Gráfico', 'Edição de imagens em alta resolução com softwares como Photoshop, Illustrator e InDesign, criação de layouts para web e impressos. Prioridades: Processador potente, placa de vídeo dedicada, tela com alta resolução.', 'R$ 4.000,00')">
+            <img src="rafa.png" alt="Rafa" onclick="showDetails('rafa', 'Rafa, Estúdio de Gravação', 'Gravação e edição de áudio com softwares como Pro Tools e Ableton Live, masterização de músicas, produção de podcasts. Prioridades: Placa de som de alta qualidade, processador e memória RAM com alto desempenho.', 'R$ 8.000,00')">
+        </div>
+
+        <!-- Lado direito: exibição dos detalhes -->
+        <div class="details" id="details">
+            <h2>Monte um PC!</h2>
+            <p>  Você foi contratado para comprar as peças e montar computadores para diversos clientes. <br>
+                Utilize os perfis dos clientes fornecidos para montar computadores personalizados que 
+                atendam às necessidades específicas de cada cliente.</p>
+            <p>Selecione um personagem à esquerda para ver os detalhes!</p>
+        </div>
+    </div>
+
+    <script>
+        function showDetails(image, title, description, price) {
+            const details = document.getElementById('details');
+            details.innerHTML = `
+                <img src="${image}.png" alt="${title}">
+                <h2>${title}</h2>
+                <p>${description}</p>
+                <p><strong>Valor Disponível:</strong> ${price}</p>
+                <a href="Orçamento.xlsx" class="button">Escolher</a>
+            `;
+        }
+    </script>
+</body>
+</html>
