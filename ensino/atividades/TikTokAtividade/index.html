@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <video id="video" controls>
+                <source id="videoSource" src="your-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="button-container">
+                <button id="like" onclick="changeIcon()"><span id="like-icon" class="material-symbols-outlined">
+                    favorite
+                    </span></button>
+                <button onclick="buttonClicked('Button 2')"><span class="material-symbols-outlined">
+                    share
+                    </span></button>
+                <button onclick="downloadVideo()"><span class="material-symbols-outlined">
+download
+</span></button>
+            </div>
+        </div>
+        <div class="description">
+            <h1>Activity Description</h1>
+            <p>This is a description of the activity. It can include various details about what is happening in the video, instructions, or any other relevant information.</p>
+            <p>Feel free to add more content here as needed. This section can be styled to look like a markdown page.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
